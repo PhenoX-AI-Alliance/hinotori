@@ -1,1 +1,181 @@
-テスト
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火の鳥 | データソリューション & インフラストラクチャ</title>
+    <style>
+        /* 徹底的に無難で洗練されたB2B向けCSS（感情ゼロ） */
+        :root {
+            --primary-color: #0f4c81; /* 信頼感を与えるクラシックブルー */
+            --bg-color: #f8f9fa;
+            --text-color: #333333;
+            --section-bg: #ffffff;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 10%;
+            text-align: left;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        section {
+            background-color: var(--section-bg);
+            padding: 2rem 3rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            color: #444;
+        }
+        p, li {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        /* 特商法テーブル用 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        th {
+            background-color: #f1f5f9;
+            width: 30%;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>火の鳥</h1>
+    <p>Hinotori Data Solutions & Infrastructure</p>
+</header>
+
+<div class="container">
+
+    <!-- 企業理念セクション -->
+    <section id="mission">
+        <h2>Mission</h2>
+        <p><strong>「データとハードウェアの『ムダ』を排除し、持続可能なインフラストラクチャを構築する」</strong></p>
+        <p>情報化社会の裏側を支えるサーバーインフラと、そこに蓄積される膨大なデータ。私たち「火の鳥」は、長年の現場経験に基づく堅牢なアーキテクチャ設計と独自の解析アプローチにより、お客様のシステムに潜むノイズを排除し、真の価値へと昇華させます。</p>
+    </section>
+
+    <!-- サービス内容セクション -->
+    <section id="services">
+        <h2>Services</h2>
+        <h3>1. データ解析・データ分析（API提供）</h3>
+        <p>ビッグデータやレガシーシステムのログを解析し、企業の意思決定をサポート。ノイズの多い生データを、機械学習に最適化されたクリーンな構造化データへと変換・整形するサービス（API）を提供します。</p>
+        
+        <h3>2. サーバー機器保守・BCPコンサルティング</h3>
+        <p>オンプレミス環境におけるハードウェアの延命措置、およびBCP（事業継続計画）を見据えた堅牢なデータセンター運用支援。次世代アーキテクチャやエネルギー効率最適化に向けた技術的アドバイザリーを行います。</p>
+    </section>
+
+    <!-- 特商法（Stripe審査の最重要項目） -->
+    <section id="legal">
+        <h2>特定商取引法に基づく表記</h2>
+        <table>
+            <tr>
+                <th>屋号</th>
+                <td>火の鳥</td>
+            </tr>
+            <tr>
+                <th>代表者・運営責任者</th>
+                <td>鳥山 晃嗣</td>
+            </tr>
+            <tr>
+                <th>事業所所在地</th>
+                <td>〒210-0051<br>神奈川県川崎市中原区宮内2-17-42</td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td>080-6903-6673</td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td>noc2.kt@gmail.com</td>
+            </tr>
+            <tr>
+                <th>販売価格・サービス利用料</th>
+                <td>各APIプランおよびデータセット購入ページ、または個別見積書にて表示する価格とします。</td>
+            </tr>
+            <tr>
+                <th>代金の支払方法・時期</th>
+                <td>クレジットカード決済（Stripe社経由）。お支払い確定時に課金されます。</td>
+            </tr>
+            <tr>
+                <th>サービスの提供時期</th>
+                <td>決済完了後、直ちにAPIキーの発行またはデータのダウンロードが可能です。</td>
+            </tr>
+            <tr>
+                <th>返品・キャンセルについて</th>
+                <td>デジタルコンテンツおよびAPIサービスの性質上、決済完了後の返品、返金、キャンセルはお受けできません。動作不良等の場合は、サポートまでご連絡ください。</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- プライバシーポリシー（Stripe審査の必須項目） -->
+    <section id="privacy">
+        <h2>プライバシーポリシー（個人情報保護方針）</h2>
+        <p>「火の鳥」（以下、「当方」）は、お客様の個人情報の保護について、以下の通りプライバシーポリシーを定めます。</p>
+        <ol>
+            <li><strong>個人情報の取得と利用：</strong>当方は、サービスの提供、決済処理、およびサポート対応のために必要な範囲で、お客様の氏名、メールアドレス、決済情報等を適正に取得し利用します。</li>
+            <li><strong>第三者への提供：</strong>法令に基づく場合を除き、お客様の同意なく第三者に個人情報を提供することはありません（※クレジットカード決済代行会社への必要な情報提供を除きます）。</li>
+            <li><strong>セキュリティ：</strong>取得した個人情報は、不正アクセスや漏洩を防ぐため、適切な安全管理措置を講じます。</li>
+            <li><strong>アクセス解析：</strong>当サイトでは、サービス改善のために匿名化されたアクセスログを収集する場合があります。</li>
+            <li><strong>お問い合わせ：</strong>個人情報の開示・訂正・削除に関するお問い合わせは、上記のメールアドレスまでご連絡ください。</li>
+        </ol>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 火の鳥 (Hinotori Data Solutions). All rights reserved.
+</footer>
+
+</body>
+</html>
